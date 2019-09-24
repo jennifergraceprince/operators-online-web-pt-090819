@@ -1,6 +1,4 @@
-require 'pry'
 def unsafe?(speed)
-  binding.pry
   if speed > 60 
     true
   elsif speed < 40
@@ -13,7 +11,14 @@ end
 
 
 def not_safe?(speed)
-	
+	if speed > 60 
+    true
+  elsif speed < 40
+    true
+  else
+    false
+  speed == true "safe" : "unsafe"
+end
 end
 	
 
